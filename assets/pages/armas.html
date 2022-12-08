@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armas | Guia de Teyvat</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fcd46123c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="../../index.html">
+                <img src="https://1000marcas.net/wp-content/uploads/2021/08/Genshin-Impact-Logo.png" alt="logo de Genshin Impact" />
+            </a>
+        </div>
+        <!-- navmobile temporal , mas adelante modificar cuando lo expliquen -->
+        <nav class="header__navMobile">
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <nav class="header__navDesktop">
+            <ul class="header__ul">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./personajes.html">Personajes</a></li>
+                <li><a href="./armas.html">Armas</a></li>
+                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwji18Di6qH7AhWkppUCHXtWBowQFnoECA0QAQ&url=https%3A%2F%2Fact.hoyolab.com%2Fys%2Fapp%2Finteractive-map%2Findex.html%3Flang%3Den-us&usg=AOvVaw1huDxBLwmDUxIttMZ4W2NV">Mapa</a></li>
+                <li><a href="../../index.html#comunidad">Comunidad</a></li>
+                <li><a href="../../index.html#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="paginaBackground">
+        <section class="filtro paginaBackgroundTexto">
+            <h1>Catálogo de Armas</h1>
+            <div class="filtro__seccion">
+                <p>Tipo de arma</p>
+                <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/sword_35.webp" title="Espada" alt="Espada" /></button>
+                <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/claymore_35.webp" title="Mandoble" alt="Mandoble" /></button>
+                <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/polearm_35.webp" title="Lanza" alt="imagen de una lanza" /></button>
+                <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/bow_35.webp" title="Arco" alt="imagen de un arco" /></button>
+                <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/catalyst_35.webp" title="Catalizador" alt="imagen de un catalizador" /></button>
+            </div>
+            <div class="filtro__seccion">
+                <p>Rareza</p>
+                <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
+                    <span>1</span>
+                    <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                </button>
+                <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
+                    <span>2</span>
+                    <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                </button>
+                <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
+                    <span>3</span>
+                    <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                </button>
+                <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
+                    <span>4</span>
+                    <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                </button>
+                <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
+                    <span>5</span>
+                    <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                </button>
+            </div>
+            <div class="filtro__seccion">
+                <input type="text" placeholder="Escriba el nombre del arma..." />
+                <button class="filtro__seccion-botonImg filtro__seccion-botonBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+        <section class="cards paginaBackgroundTexto">
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+            <div class="cards__card">
+                <a href="./detalleArma/hojaDesafilada.html">
+                    <div class="cards__card-img cards__card1Star">
+                         <img src="https://itruco.com/wp-content/uploads/2021/06/Todo-sobre-la-Espada-Hoja-desafilada-de-Genshin-Impact.png" alt="imagen de Hoja Desafilada" title="Hoja Desafilada" />
+                    </div>
+                    <div class="cards__card-iconElemento">
+                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de una estrella amarilla" />
+                    </div>
+                    <p class="cards__card-text " title="Hoja Desafilada">Hoja Desafilada</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- agregar background negro -->
+        <div class="footer__texto">
+            Este sitio web está hecho con fines educativos y de investigación
+        </div>
+        <div class="footer__img">
+            <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/GIEN_1587984203_6764.png" alt="imagen logo genshin impact">
+        </div> 
+        <div class="footer__texto">
+            © 2022 - www.guiadeteyvat.com
+        </div>
+    </footer>
+</body>
+</html>
