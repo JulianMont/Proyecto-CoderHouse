@@ -61,16 +61,27 @@ header{
 
 .header__logo{
     height: 100%;
+    transition: all .4s;
+}
+
+.header__logo:hover{
+    transform: scale(1.1);
 }
 
 
 header a{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     color: #000000;
 }
 
+header a:hover{
+    color: #424242;
+} 
+
+
 .header__ul{
+    height: 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -79,6 +90,23 @@ header a{
 
 .header__ul li{
     margin: 0 16px;
+    position: relative;
+}
+
+.header__ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #061a28;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+
+    transition: 0.4s ease-out;
+}
+
+.header__ul li:hover::before{
+    width: 100%;
 }
 
 .header__navMobile{
@@ -131,10 +159,23 @@ footer{
 
 .inicio__img{
     width: 400px;
+
+    animation: animacionDeAparicion ease-in 1.2s;
 }
 
 .inicio nav{
     margin-top: 25px;
+
+    animation: animacionDeAparicion ease-out 1.2s;
+}
+
+@keyframes animacionDeAparicion {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .inicio__navBar{
@@ -148,11 +189,18 @@ footer{
     width: 170px;
     display: inline-block;
     margin: 15px;
-    padding: 10px;
     border-radius: 7px;
     background-color: #99aab74b;
     text-align: center;
     font-weight: bold;
+
+    transition: all 0.4s;
+}
+
+.inicio__navBar li:hover,
+.inicio__navBar li a:hover{
+    transform: scale(1.2);
+    color: #061a28 ;
 }
 
 .inicio__navBar img{
@@ -200,11 +248,22 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all 0.4s;
 }
+
+.redes__navBar li:hover{
+    transform: scale(1.2);
+}
+
 
 .redes__navBar i{
     color: #ffffff;
     font-size: 35px;
+}
+
+.redes__navBar i:hover{
+    color: #061a28;
 }
 
 /* contactos */
@@ -261,6 +320,11 @@ footer{
     padding: 5px;
 }
 
+.form__dato input:focus::placeholder,
+.form__dato textarea:focus::placeholder{
+    color: #b9b9b9;
+}
+
 .form__dato textarea, .form__dato button{
     font-size: 17px;
     width: 100%;
@@ -269,6 +333,12 @@ footer{
 .form__dato button{
     height: 30px;
     cursor: pointer;
+
+    transition: all 0.8s;
+}
+
+.form__dato button:hover{
+    font-size: 15px;
 }
 
 /* SECCION FILTRO */
@@ -310,7 +380,6 @@ footer{
     padding: 3px;
     cursor: pointer;
 }
-
 
 .filtro__seccion-botonTextoImg{
     width: 55px;
@@ -371,7 +440,16 @@ footer{
     border-radius: 20px;
     border: 2px solid #000000;
     overflow: hidden;
+
+    transition: all .4s;
 }
+
+.cards__card:hover{
+    transform: scale(1.1);
+    border-color:#c4dcfc;
+}
+
+
 .cards__card-img,
 .cardTable__img{
     width: 100%;
@@ -540,6 +618,21 @@ footer{
 .habilidad__inverso{
     order: 2;
 }
+
+/* .presentacionPersonaje__titulo,
+.presentacionPersonaje__info-img,
+.presentacionPersonaje__info-descripcion,
+.contenido__container,
+.pasivas h3,
+.pasiva,
+.habilidades h3,
+.habilidad__container,
+.habilidad__descripcion,
+.constelaciones h3,
+.constelacion__img,
+.constelacion__descripcion{
+    overflow: hidden;
+} */
 
 /* SECCION CONTENIDO DETALLE ARMA */
 
