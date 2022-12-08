@@ -9,7 +9,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
 a{
     text-decoration: none;
     
@@ -34,6 +33,7 @@ textarea{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .paginaBackgroundTexto{
@@ -619,20 +619,6 @@ footer{
     order: 2;
 }
 
-/* .presentacionPersonaje__titulo,
-.presentacionPersonaje__info-img,
-.presentacionPersonaje__info-descripcion,
-.contenido__container,
-.pasivas h3,
-.pasiva,
-.habilidades h3,
-.habilidad__container,
-.habilidad__descripcion,
-.constelaciones h3,
-.constelacion__img,
-.constelacion__descripcion{
-    overflow: hidden;
-} */
 
 /* SECCION CONTENIDO DETALLE ARMA */
 
@@ -740,7 +726,6 @@ footer{
 .cards__card5Star{
     background: url(../images/Fondo_de_rareza_Legendario.png) no-repeat center/cover;
 }
-
 
 /* MEDIA QUERY */
 
@@ -985,7 +970,6 @@ footer{
 }
 @media screen and (max-width:330px){
 
-
      footer{
         padding: 10px;
     }
@@ -1041,6 +1025,22 @@ footer{
 
     .habilidad__container img{
         width: 30px;
+    }
+
+    .contenido h3{
+        font-size: 30px;
+    }
+
+    .pasivas h3,
+    .habilidades h3,
+    .constelaciones h3{
+        font-size: 20px;
+    }
+
+    .pasiva__descripcion h4,
+    .habilidad__descripcion h4,
+    .constelacion__descripcion h4{
+        font-size: 18px;
     }
 
 }
