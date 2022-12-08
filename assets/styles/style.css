@@ -648,3 +648,306 @@ footer{
     background: url(../images/Fondo_de_rareza_Legendario.png) no-repeat center/cover;
 }
 
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1024px){
+
+    /* INICIO */
+
+    .inicio__navBar li{
+        margin: 10px;
+    }
+
+    /* PERSONAJES */
+
+    .cards{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    
+    /* PERSONAJE MAS DETALLE */
+
+    .presentacionPersonaje__info-img{
+        height: 300px;
+    }
+    
+    .presentacionPersonaje{
+        height: auto;
+    }
+    .habilidad__container img{
+        width: 50px;
+    }
+
+
+}
+@media screen and (max-width:960px){
+
+    .header__navDesktop{
+        display: none;
+    }
+
+    .header__navMobile{
+        display: initial;
+    }
+
+    /* INICIO */
+
+    .inicio,
+    .inicio__video{
+        height: 130vh;
+    }
+
+    .inicio__img{
+        width: 350px;
+    }
+
+    .contacto__imgPaimon{
+        margin-bottom: 15px;
+    }
+
+    /* PERSONAJES */
+
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .header__ul li{
+        margin: 0 8px;
+    }
+
+    /* PERSONAJE MAS DETALLE */
+
+    .presentacionPersonaje__titulo{
+        font-size: 30px;
+        
+    }
+    
+    .presentacionPersonaje__info{
+        flex-direction: column;
+    }
+    
+    .presentacionPersonaje__info-descripcion{
+        width: 100%;
+        
+    }
+    
+    .habilidad{
+        flex-direction: column;
+    }
+
+    .habilidad__container,
+    .habilidad__descripcion{
+        width: 90%;
+    }
+
+    .habilidad__container img{
+        width: 60px;
+    }
+    
+    .habilidad__inverso{
+        order: 0;
+    }
+    
+    
+
+    
+
+}
+@media screen and (max-width:728px){
+
+    /* INICIO */
+
+    .inicio,
+    .inicio__video{
+        height: 100vh;
+    }
+
+    .inicio__img{
+        width: 300px;
+    }
+
+    .inicio__video{
+        object-position: 40%;
+    }
+
+    .inicio__navBar li{
+        width: 130px;
+    }
+
+    .inicio__navBar a{
+        font-size: 18px;
+    }
+
+
+    .redes__titulo{
+        font-size: 50px;
+    }
+
+    .contacto__imgPaimon{
+        width: 250px;
+    }
+
+    .contacto__formulario{
+        width: 800px;
+    }
+
+    .contacto__formulario-titulo{
+        font-size:50px;
+        text-align: center;
+
+    }
+
+    /* PERSONAJES */
+
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* PERSONAJE MAS DETALLE */
+
+    .presentacionPersonaje__info-img{
+        height: 300px;
+    }
+
+    .habilidad__container img{
+        width: 50px;
+        right: 80%;
+    }
+
+    .pasiva__descripcion,.habilidad__descripcion,.constelacion__descripcion{
+        width: 100%; 
+    }
+
+
+}
+@media screen and (max-width:450px){
+
+    /* INICIO */
+
+    .inicio__video{
+        object-position: 30%;
+    }
+
+    .inicio,
+    .inicio__video{
+        height: 140vh;
+    }
+
+    .redes{
+        height: 80vh;
+    }
+
+    .redes__navBar li{
+        margin: 20px;
+    }
+
+    .redes__titulo{
+        font-size: 40px;
+    }
+
+
+    .contacto__imgPaimon{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contacto__formulario-titulo{
+        font-size: 40px;
+    }
+
+    .form__dato{
+        flex-direction: column;
+    }
+
+    .form__dato label, .form__dato input, .form__dato select{
+        width: 100%;
+    } 
+
+   
+    /* PERSONAJES */
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PERSONAJE MAS DETALLE */
+
+    .presentacionPersonaje__info-img{
+        height: 250px;
+    }
+
+    .habilidad__container img{
+        width: 40px;
+    }
+
+    .pasiva__img,.constelacion__img{
+        width: 80px;
+    }
+
+    .pasiva , .habilidad,.constelacion{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:330px){
+
+
+     footer{
+        padding: 10px;
+    }
+
+
+    /* INICIO */
+
+    .inicio,
+    .inicio__video{
+        height: 200vh;
+    }
+
+    .inicio__img{
+        width: 200px;
+    }
+
+    .inicio__navBar{
+        flex-direction: column;
+    }
+
+    .redes{
+        height: 100vh;
+    }
+    
+    ol,ul{
+        padding: 0;
+    }
+
+    .contacto__formulario-titulo{
+        font-size: 30px;
+    }
+
+    .form__dato label,
+    .form__dato input,
+    .form__dato select,
+    .form__dato option,
+    .form__dato textarea{
+        font-size: 15px;
+    }
+
+    /* PERSONAJES */
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* PERSONAJE MAS DETALLE */
+
+    .presentacionPersonaje__info-img{
+        height: 200px;
+    }
+
+
+    .habilidad__container img{
+        width: 30px;
+    }
+
+}
