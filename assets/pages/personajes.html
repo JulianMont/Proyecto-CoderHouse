@@ -1,83 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personajes | Guia de Teyvat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="shortcut icon" href="../images/favicon.ico" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/fcd46123c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
-        <div class="header__logo">
-            <a href="../../index.html">
-                <img src="https://1000marcas.net/wp-content/uploads/2021/08/Genshin-Impact-Logo.png" alt="logo de Genshin Impact" />
-            </a>
-        </div>
-        <!-- navmobile temporal , mas adelante modificar cuando lo expliquen -->
-        <nav class="header__navMobile">
-            <i class="fa-solid fa-bars"></i>
-        </nav>
-        <nav class="header__navDesktop">
-            <ul class="header__ul">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="../pages/personajes.html">Personajes</a></li>
-                <li><a href="../pages/armas.html">Armas</a></li>
-                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwji18Di6qH7AhWkppUCHXtWBowQFnoECA0QAQ&url=https%3A%2F%2Fact.hoyolab.com%2Fys%2Fapp%2Finteractive-map%2Findex.html%3Flang%3Den-us&usg=AOvVaw1huDxBLwmDUxIttMZ4W2NV">Mapa</a></li>
-                <li><a href="../../index.html#comunidad">Comunidad</a></li>
-                <li><a href="../../index.html#contactanos">Contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="https://1000marcas.net/wp-content/uploads/2021/08/Genshin-Impact-Logo.png" alt="logo de Genshin Impact" /></a>
+                <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/personajes.html">Personajes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/armas.html">Armas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwji18Di6qH7AhWkppUCHXtWBowQFnoECA0QAQ&url=https%3A%2F%2Fact.hoyolab.com%2Fys%2Fapp%2Finteractive-map%2Findex.html%3Flang%3Den-us&usg=AOvVaw1huDxBLwmDUxIttMZ4W2NV">Mapa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#comunidad">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html#contactanos">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="paginaBackground">
+        <!-- filtro -->
         <section class="filtro  paginaBackgroundTexto">
             <h1>Catálogo de Personajes</h1>
-            <div class="filtro__seccion-vistaDesktop">
                 <div class="filtro__seccion">
-                    <p>Tipo de Elemento</p>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg" title="Pyro" alt="Icono de elemento Pyro"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg" title="Hydro" alt="Icono de elemento Hydro"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg" title="Electro" alt="Icono de elemento Electro"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg" title="Cryo" alt="Icono de elemento Cryo"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg" title="Anemo" alt="Icono de elemento Anemo"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg" title="Geo" alt="Icono de elemento Geo"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg" title="Dendro" alt="Icono de elemento Dendro"></button>
+                    <h6>Tipo de Elemento</h6>
+                    <div class="filtro__container-button">
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg active" data-bs-toggle="button">All</button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg" title="Pyro" alt="Icono de elemento Pyro"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg" title="Hydro" alt="Icono de elemento Hydro"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg" title="Electro" alt="Icono de elemento Electro"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg" title="Cryo" alt="Icono de elemento Cryo"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg" title="Anemo" alt="Icono de elemento Anemo"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg" title="Geo" alt="Icono de elemento Geo"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg" title="Dendro" alt="Icono de elemento Dendro"></button>
+                    </div>    
                 </div>
                 <div class="filtro__seccion">
-                    <p>Tipo de arma</p>
-                    <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/sword_35.webp" title="Espada" alt="imagen de Espada"></button>   
-                    <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/claymore_35.webp" title="Mandoble" alt="imagen de Mandoble"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/polearm_35.webp" title="Lanza" alt="imagen de una lanza"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/bow_35.webp" title="Arco" alt="imagen de un arco"></button>
-                    <button class="filtro__seccion-botonImg"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/catalyst_35.webp" title="Catalizador" alt="imagen de un catalizador"></button>
+                    <h6>Tipo de arma</h6>
+                    <div class="filtro__container-button">
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg active" data-bs-toggle="button">All</button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/sword_35.webp" title="Espada" alt="imagen de Espada"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/claymore_35.webp" title="Mandoble" alt="imagen de Mandoble"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/polearm_35.webp" title="Lanza" alt="imagen de una lanza"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/bow_35.webp" title="Arco" alt="imagen de un arco"></button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg" data-bs-toggle="button"><img src="https://genshin.honeyhunterworld.com/img/icons/weapon_types/catalyst_35.webp" title="Catalizador" alt="imagen de un catalizador"></button>
+                    </div>
                 </div>
                 <div class="filtro__seccion">
-                    <p>Rareza</p>
-                    <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
-                        <span>4</span>
-                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella">
-                    </button>
-                    <button class="filtro__seccion-botonImg filtro__seccion-botonTextoImg">
-                        <span>5</span>
-                        <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella">
-                    </button>
+                    <h6>Rareza</h6>
+                    <div class="filtro__container-button">
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg active" data-bs-toggle="button">All</button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg filtro__seccion-botonTextoImg" data-bs-toggle="button">
+                            <span>4</span>
+                            <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella" />
+                        </button>
+                        <button type="button" class="btn btn-outline-dark filtro__seccion-botonImg filtro__seccion-botonTextoImg" data-bs-toggle="button">
+                            <span>5</span>
+                            <img src="https://genshin.honeyhunterworld.com/img/icons/star_35.webp" alt="icono de estrella">
+                        </button>
+                    </div>
                 </div>
-                <div class="filtro__seccion">
-                    <input type="text" placeholder="Escriba el nombre del personaje...">
+                <div class="filtro__seccion filtro__seccion-search">
+                    <input type="text" placeholder="Escriba el nombre del personaje">
                     <button class="filtro__seccion-botonImg filtro__seccion-botonBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-            </div>
-            <div class="filtro__seccion-vistaMobile">
-                <!-- TERMINAR VISTA MOBILE -->
-            </div>
         </section>
         <section class="cards   paginaBackgroundTexto">
+            <!-- multiples cards de personajes -->
             <div class="cards__card ">
                 <a href="./detallePersonaje/fischl.html">
                     <div class="cards__card-img cards__card4Star">
@@ -432,5 +440,8 @@
             © 2022 - www.guiadeteyvat.com
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/fcd46123c6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
