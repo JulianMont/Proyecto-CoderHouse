@@ -1,0 +1,138 @@
+
+
+/* SECCION FILTRO */
+
+.filtro{
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: column nowrap;
+
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    
+    &__seccion{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-flow: column wrap;
+
+        &::placeholder { 
+            color: #000000; 
+        }
+        
+        h6{
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .filtro__container-button{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        button{
+            border-width: 2px;
+            background-color: #e0e0e0;
+
+        }
+        .filtro__seccion-botonImg{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 4px;
+            padding: 3px;
+            cursor: pointer;
+
+        }
+        
+        .filtro__seccion-botonTextoImg{
+            width: 55px;
+            padding: 2px;
+            
+            span{
+                font-size: 20px;
+                margin: 4px;
+            }
+            
+            img{
+                width: 50%;
+                height: 70%;
+            }
+        }
+
+
+        &-search{
+            flex-direction: row;
+            justify-content: center;
+            
+            input{
+                color: #000000;
+                width: 300px;
+                border: none;
+                border: 3px solid black;
+                background: transparent;
+                outline: none;
+                text-align: center;
+                border-radius: 40px 0 0 40px;
+                font-size: 16px;
+                text-overflow: ellipsis;
+            }
+            
+            .filtro__seccion-botonBuscar{
+                margin: 0;
+                border: none;
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+                border-right: 3px solid black;
+                border-radius: 0 40px 40px 0 ;
+                cursor: pointer;
+                background-color: #e0e0e000;
+            } 
+        }
+    }
+    
+}
+
+
+/* SECCION CARD */
+
+.cards{
+    
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px 10px;
+    padding: 10px 10px 30px 10px;
+
+    &__card{
+        
+        @extend .card;
+
+        &-img{
+            
+            @extend .cardImg;
+        }
+
+        &-text{
+            
+            @extend .cardTexto;
+        }
+        
+        &-iconElemento{
+            position: absolute;
+            top: 4%;
+            left: 4%;
+            width: 25px;
+            height: 25px;
+            z-index: 2;
+        }
+    }
+}

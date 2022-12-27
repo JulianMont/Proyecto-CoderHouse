@@ -1,0 +1,22 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyecto de pagina web  para el curso de desarrollo web de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss assets/styles/scss/main.scss assets/styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianMont/Proyecto-CoderHouse.git"
+  },
+  "author": "Julian Montenegro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianMont/Proyecto-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/JulianMont/Proyecto-CoderHouse#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

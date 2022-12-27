@@ -1,0 +1,23 @@
+
+// UTILITIES
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/extends";
+
+// COMPONENTS
+
+@import "./components/global";
+@import "./components/footer";
+@import "./components/header";
+
+// VIEWS
+
+@import "./views/index";
+@import "./views/personajesYArmas";
+@import "./views/personajeDetalle";
+@import "./views/armaDetalle";
+
+//RESPONSIVE
+
+@import "./components/media";

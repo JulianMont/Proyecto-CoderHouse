@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+ul,ol{
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+.paginaBackground{
+    background: url(../../images/backgroundPaginaPersonajes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.paginaBackgroundTexto{
+    background-color:#e0e0e0ab;
+}
+
+.cards__card1Star{
+    background: url(../../images/Fondo_de_rareza_Normal.png) no-repeat center/cover;
+}
+
+.cards__card2Star{
+    background: url(../../images/Fondo_de_rareza_Verde.png) no-repeat center/cover;
+}
+
+.cards__card3Star{
+    background: url(../../images/Fondo_de_rareza_Azul.png) no-repeat center/cover;
+}
+
+.cards__card4Star{
+    background: url(../../images/Fondo_de_rareza_Violeta.png) no-repeat center/cover;
+}
+
+.cards__card5Star{
+    background: url(../../images/Fondo_de_rareza_Legendario.png) no-repeat center/cover;
+}
