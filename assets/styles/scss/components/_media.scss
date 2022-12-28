@@ -16,6 +16,8 @@
         }
     }
 
+    // PERSONAJES
+
     .cards{
         grid-template-columns: repeat(5, 1fr);
     }
@@ -23,43 +25,68 @@
     
     // PERSONAJE MAS DETALLE 
 
-    .presentacionPersonaje__info-img{
-        height: 300px;
-    }
-    
     .presentacionPersonaje{
+
         height: auto;
-    }
-    
-    .habilidad__container{
-        img{
-            width: 50px;
+
+        &__info{
+            &-img{
+                height: 300px;
+            }
         }
     }
 
+    .habilidades{
 
+        .habilidad{
+
+            &__container{
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:960px){
 
     /* HEADER */
 
-    .nav-item{
-        margin: 0 3px;
-    }
+    header{
+        .navbar{
+            .container-fluid{
+                .navbar-collapse{
+                    .nav-item{
+                        margin: 0 13px;
+                    }
+                }
 
+            }
+        }   
+    }
     /* INICIO */
 
-    .inicio__navBar li{
-        width: 150px;
+    .inicio{
+        nav{
+            .inicio__navBar{
+
+                li{
+                    width: 150px;
+                }
+
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
-    .inicio__navBar a{
-        font-size: 20px;
-    }
+    .contacto{
 
-    .contacto__imgPaimon{
-        margin-bottom: 15px;
+        &__imgPaimon{
+            margin-bottom: 15px;
+        }
     }
 
     /* PERSONAJES */
@@ -68,90 +95,111 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .header__ul li{
-        margin: 0 8px;
-    }
-
     /* PERSONAJE MAS DETALLE */
 
-    .presentacionPersonaje__titulo{
-        font-size: 30px;
+
+    .presentacionPersonaje{
+
+        &__titulo{
+
+            font-size: 30px;
+        }
+
+        &__info{
+            flex-direction: column;
+
+            &-descripcion{
+
+                width: 100%;
+            }
+        }
         
     }
-    
-    .presentacionPersonaje__info{
-        flex-direction: column;
-    }
-    
-    .presentacionPersonaje__info-descripcion{
-        width: 100%;
-        
-    }
-    
-    .habilidad{
-        flex-direction: column;
-    }
 
-    .habilidad__container,
-    .habilidad__descripcion{
-        width: 90%;
-    }
+    .habilidades{
 
-    .habilidad__container img{
-        width: 60px;
-    }
-    
-    .habilidad__inverso{
-        order: 0;
-    }
-    
-    
+        .habilidad{
 
-    
+            flex-direction: column;
 
+            &__container{
+                width: 90%;
+            }
+
+            &__descripcion{
+
+                width: 90%;
+
+                img{
+                    width: 60px;
+                }
+            }
+
+            &__inverso{
+                order: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:728px){
 
-    .inicio__video{
-        object-position: 40%;
+
+    .inicio{
+
+        &__video{
+            object-position: 40%;
+        }
+
+        h1{
+            font-size: 45px;
+        }
+
+        nav{
+
+            .inicio__navBar{
+
+                li{
+                    width: 130px;
+                }
+
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
-    .inicio h1{
-        font-size: 45px;
+    .redes{
+        &__titulo{
+            font-size: 50px;
+        }
     }
 
-    .inicio__navBar li{
-        width: 130px;
-    }
+    .contacto{
 
-    .inicio__navBar a{
-        font-size: 18px;
-    }
+        &__imgPaimon{
+            width: 250px;
+        }
 
+        &__formulario{
+            width: 800px;
 
-    .redes__titulo{
-        font-size: 50px;
-    }
-
-    .contacto__imgPaimon{
-        width: 250px;
-    }
-
-    .contacto__formulario{
-        width: 800px;
-    }
-
-    .contacto__formulario-titulo{
-        font-size:50px;
-        text-align: center;
-
+            &-titulo{
+                font-size:50px;
+                text-align: center;
+            }
+        }
     }
 
     /* FILTRO */
 
-    .filtro__seccion input{
-        width: 80%;
+    .filtro{
+        &__seccion{
+            input{
+                width: 80%;
+            }
+        }
     }
 
     /* PERSONAJES */
@@ -162,69 +210,119 @@
 
     /* PERSONAJE MAS DETALLE */
 
-    .presentacionPersonaje__info-img{
-        height: 300px;
+
+    .presentacionPersonaje{
+    
+        &__info{
+
+            img{
+
+                height: 300px; 
+            }
+        }
     }
 
-    .habilidad__container img{
-        width: 50px;
-        right: 80%;
+    .habilidades{
+
+        .habilidad{
+
+            &__container{
+                img{
+                    right: 80%;
+                }
+            } 
+
+            &__descripcion{
+                width: 100%;
+            }
+        }
     }
 
-    .pasiva__descripcion,.habilidad__descripcion,.constelacion__descripcion{
-        width: 100%; 
+    .pasivas{
+        .pasiva{
+            &__descripcion{
+                width: 100%;
+            }
+        }
     }
 
-
+    .constelaciones{
+        .constelacion{
+            &__descripcion{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:450px){
 
     /* INICIO */
 
-    .inicio__video{
-        object-position: 30%;
-    }
+    .inicio{
 
-    .inicio,
-    .inicio__video{
         height: 130vh;
+
+        &__video{
+            object-position: 30%;
+            height: 130vh;
+        }
     }
 
     .redes{
+
         height: 80vh;
+
+        &__navBar{
+
+            li{
+                margin: 20px;
+            }
+        }
+    
+        &__titulo{
+            font-size: 40px;
+        }
+
     }
 
-    .redes__navBar li{
-        margin: 20px;
+    .contacto{
+
+        &__imgPaimon{
+
+            width: 200px;
+            height: 200px;
+        }
+
+        &__formulario{
+            &-titulo{
+
+                font-size: 40px;
+            }
+        }
+
+        &__form{
+
+            .form__dato{
+                flex-direction: column;
+
+                label,
+                input,
+                select{
+                    width: 100%;
+                }
+            }
+        }
     }
-
-    .redes__titulo{
-        font-size: 40px;
-    }
-
-
-    .contacto__imgPaimon{
-        width: 200px;
-        height: 200px;
-    }
-
-    .contacto__formulario-titulo{
-        font-size: 40px;
-    }
-
-    .form__dato{
-        flex-direction: column;
-    }
-
-    .form__dato label, .form__dato input, .form__dato select{
-        width: 100%;
-    } 
 
     /* FILTRO */
 
-    .filtro__seccion input{
-        width: 70%;
+    .filtro{
+        &__seccion{
+            input{
+                width: 70%;
+            }
+        }
     }
 
     /* PERSONAJES */
@@ -235,54 +333,99 @@
 
     /* PERSONAJE MAS DETALLE */
 
-    .presentacionPersonaje__info-img{
-        height: 250px;
+    .habilidades{
+
+        .habilidad{
+
+            flex-direction: column;
+
+            &__container{
+                img{
+                    width: 40px;
+                }
+            } 
+        }
     }
 
-    .habilidad__container img{
-        width: 40px;
+    .pasivas{
+
+        .pasiva{
+
+            flex-direction: column;
+            
+            &__img{
+
+                width: 80px;
+            }
+        }
     }
 
-    .pasiva__img,.constelacion__img{
-        width: 80px;
-    }
+    .constelaciones{
 
-    .pasiva , .habilidad,.constelacion{
-        flex-direction: column;
+        .constelacion{
+
+            flex-direction: column;
+            
+            &__img{
+
+                width: 80px;
+            }
+        }
     }
 
     /* ARMA MAS DETALLE */
 
-    .presentacionArma__descripcion-titulo{
-        font-size: 35px;
-    }
-    
-    .presentacionArma__descripcion-containerEstadistica{
-        flex-direction: column;
-    }
+    .presentacionArma{
 
+        &__descripcion{
+
+            &-titulo{
+                font-size: 35px;
+            }
+
+            &-containerEstadistica{
+
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:330px){
 
-     footer{
+    footer{
         padding: 10px;
     }
 
-
     /* INICIO */
 
-    .inicio,
-    .inicio__video{
+    .inicio{
+
         height: 200vh;
-    }
 
-    .inicio h1{
-        font-size: 40px;
-    }
+        &__video{
+            object-position: 30%;
+            height: 200vh;
+        }
+        h1{
+            font-size: 40px;
+        }
 
-    .inicio__navBar{
-        flex-direction: column;
+        nav{
+
+            .inicio__navBar{
+
+                flex-direction: column;
+
+                li{
+                    width: 130px;
+                }
+
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
     .redes{
@@ -293,22 +436,42 @@
         padding: 0;
     }
 
-    .contacto__formulario-titulo{
-        font-size: 30px;
-    }
+    .contacto{
 
-    .form__dato label,
-    .form__dato input,
-    .form__dato select,
-    .form__dato option,
-    .form__dato textarea{
-        font-size: 15px;
+        &__formulario{
+            &-titulo{
+
+                font-size: 40px;
+            }
+
+            &-form{
+    
+                .form__dato{
+                    flex-direction: column;
+    
+                    label,
+                    input,
+                    select,
+                    option,
+                    textarea{
+                        font-size: 15px;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+
     }
 
     /* FILTRO */
 
-    .filtro__seccion input{
-        width: 6 0%;
+    .filtro{
+        &__seccion{
+            input{
+                width: 60%;
+            }
+        }
     }
 
     /* PERSONAJES */
@@ -319,29 +482,63 @@
 
     /* PERSONAJE MAS DETALLE */
 
-    .presentacionPersonaje__info-img{
-        height: 200px;
+    .contenido{
+
+        h3{
+            
+            font-size: 30px;
+        }
     }
 
+    .habilidades{
 
-    .habilidad__container img{
-        width: 30px;
+        h3{
+            font-size: 20px;
+        }
+
+        .habilidad{
+
+            h4{
+                font-size: 18px;
+            }
+
+            &__container{
+                img{
+                    width: 30px;
+                }
+            } 
+        }
     }
 
-    .contenido h3{
-        font-size: 30px;
+    .pasivas{
+
+        h3{
+            font-size: 20px;
+        }
+
+        .pasiva{
+
+            &__descripcion{
+                h4{
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
-    .pasivas h3,
-    .habilidades h3,
-    .constelaciones h3{
-        font-size: 20px;
-    }
+    .constelaciones{
 
-    .pasiva__descripcion h4,
-    .habilidad__descripcion h4,
-    .constelacion__descripcion h4{
-        font-size: 18px;
-    }
+        h3{
+            font-size: 20px;
+        }
 
+        .constelacion{
+
+            &__descripcion{
+                h4{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

@@ -570,54 +570,53 @@ header {
     margin: 10px; }
   .cards {
     grid-template-columns: repeat(5, 1fr); }
-  .presentacionPersonaje__info-img {
-    height: 300px; }
   .presentacionPersonaje {
     height: auto; }
-  .habilidad__container img {
+    .presentacionPersonaje__info-img {
+      height: 300px; }
+  .habilidades .habilidad__container img {
     width: 50px; } }
 
 @media screen and (max-width: 960px) {
   /* HEADER */
-  .nav-item {
-    margin: 0 3px; }
+  header .navbar .container-fluid .navbar-collapse .nav-item {
+    margin: 0 13px; }
   /* INICIO */
-  .inicio__navBar li {
+  .inicio nav .inicio__navBar li {
     width: 150px; }
-  .inicio__navBar a {
+  .inicio nav .inicio__navBar a {
     font-size: 20px; }
   .contacto__imgPaimon {
     margin-bottom: 15px; }
   /* PERSONAJES */
   .cards {
     grid-template-columns: repeat(4, 1fr); }
-  .header__ul li {
-    margin: 0 8px; }
   /* PERSONAJE MAS DETALLE */
   .presentacionPersonaje__titulo {
     font-size: 30px; }
   .presentacionPersonaje__info {
     flex-direction: column; }
-  .presentacionPersonaje__info-descripcion {
-    width: 100%; }
-  .habilidad {
+    .presentacionPersonaje__info-descripcion {
+      width: 100%; }
+  .habilidades .habilidad {
     flex-direction: column; }
-  .habilidad__container,
-  .habilidad__descripcion {
-    width: 90%; }
-  .habilidad__container img {
-    width: 60px; }
-  .habilidad__inverso {
-    order: 0; } }
+    .habilidades .habilidad__container {
+      width: 90%; }
+    .habilidades .habilidad__descripcion {
+      width: 90%; }
+      .habilidades .habilidad__descripcion img {
+        width: 60px; }
+    .habilidades .habilidad__inverso {
+      order: 0; } }
 
 @media screen and (max-width: 728px) {
   .inicio__video {
     object-position: 40%; }
   .inicio h1 {
     font-size: 45px; }
-  .inicio__navBar li {
+  .inicio nav .inicio__navBar li {
     width: 130px; }
-  .inicio__navBar a {
+  .inicio nav .inicio__navBar a {
     font-size: 18px; }
   .redes__titulo {
     font-size: 50px; }
@@ -625,9 +624,9 @@ header {
     width: 250px; }
   .contacto__formulario {
     width: 800px; }
-  .contacto__formulario-titulo {
-    font-size: 50px;
-    text-align: center; }
+    .contacto__formulario-titulo {
+      font-size: 50px;
+      text-align: center; }
   /* FILTRO */
   .filtro__seccion input {
     width: 80%; }
@@ -635,36 +634,41 @@ header {
   .cards {
     grid-template-columns: repeat(3, 1fr); }
   /* PERSONAJE MAS DETALLE */
-  .presentacionPersonaje__info-img {
+  .presentacionPersonaje__info img {
     height: 300px; }
-  .habilidad__container img {
-    width: 50px;
+  .habilidades .habilidad__container img {
     right: 80%; }
-  .pasiva__descripcion, .habilidad__descripcion, .constelacion__descripcion {
+  .habilidades .habilidad__descripcion {
+    width: 100%; }
+  .pasivas .pasiva__descripcion {
+    width: 100%; }
+  .constelaciones .constelacion__descripcion {
     width: 100%; } }
 
 @media screen and (max-width: 450px) {
   /* INICIO */
-  .inicio__video {
-    object-position: 30%; }
-  .inicio,
-  .inicio__video {
+  .inicio {
     height: 130vh; }
+    .inicio__video {
+      object-position: 30%;
+      height: 130vh; }
   .redes {
     height: 80vh; }
-  .redes__navBar li {
-    margin: 20px; }
-  .redes__titulo {
-    font-size: 40px; }
+    .redes__navBar li {
+      margin: 20px; }
+    .redes__titulo {
+      font-size: 40px; }
   .contacto__imgPaimon {
     width: 200px;
     height: 200px; }
   .contacto__formulario-titulo {
     font-size: 40px; }
-  .form__dato {
+  .contacto__form .form__dato {
     flex-direction: column; }
-  .form__dato label, .form__dato input, .form__dato select {
-    width: 100%; }
+    .contacto__form .form__dato label,
+    .contacto__form .form__dato input,
+    .contacto__form .form__dato select {
+      width: 100%; }
   /* FILTRO */
   .filtro__seccion input {
     width: 70%; }
@@ -672,14 +676,18 @@ header {
   .cards {
     grid-template-columns: repeat(2, 1fr); }
   /* PERSONAJE MAS DETALLE */
-  .presentacionPersonaje__info-img {
-    height: 250px; }
-  .habilidad__container img {
-    width: 40px; }
-  .pasiva__img, .constelacion__img {
-    width: 80px; }
-  .pasiva, .habilidad, .constelacion {
+  .habilidades .habilidad {
     flex-direction: column; }
+    .habilidades .habilidad__container img {
+      width: 40px; }
+  .pasivas .pasiva {
+    flex-direction: column; }
+    .pasivas .pasiva__img {
+      width: 80px; }
+  .constelaciones .constelacion {
+    flex-direction: column; }
+    .constelaciones .constelacion__img {
+      width: 80px; }
   /* ARMA MAS DETALLE */
   .presentacionArma__descripcion-titulo {
     font-size: 35px; }
@@ -690,43 +698,54 @@ header {
   footer {
     padding: 10px; }
   /* INICIO */
-  .inicio,
-  .inicio__video {
+  .inicio {
     height: 200vh; }
-  .inicio h1 {
-    font-size: 40px; }
-  .inicio__navBar {
-    flex-direction: column; }
+    .inicio__video {
+      object-position: 30%;
+      height: 200vh; }
+    .inicio h1 {
+      font-size: 40px; }
+    .inicio nav .inicio__navBar {
+      flex-direction: column; }
+      .inicio nav .inicio__navBar li {
+        width: 130px; }
+      .inicio nav .inicio__navBar a {
+        font-size: 18px; }
   .redes {
     height: 100vh; }
   ol, ul {
     padding: 0; }
   .contacto__formulario-titulo {
-    font-size: 30px; }
-  .form__dato label,
-  .form__dato input,
-  .form__dato select,
-  .form__dato option,
-  .form__dato textarea {
-    font-size: 15px; }
+    font-size: 40px; }
+  .contacto__formulario-form .form__dato {
+    flex-direction: column; }
+    .contacto__formulario-form .form__dato label,
+    .contacto__formulario-form .form__dato input,
+    .contacto__formulario-form .form__dato select,
+    .contacto__formulario-form .form__dato option,
+    .contacto__formulario-form .form__dato textarea {
+      font-size: 15px;
+      width: 100%; }
   /* FILTRO */
   .filtro__seccion input {
-    width: 6 0%; }
+    width: 60%; }
   /* PERSONAJES */
   .cards {
     grid-template-columns: repeat(1, 1fr); }
   /* PERSONAJE MAS DETALLE */
-  .presentacionPersonaje__info-img {
-    height: 200px; }
-  .habilidad__container img {
-    width: 30px; }
   .contenido h3 {
     font-size: 30px; }
-  .pasivas h3,
-  .habilidades h3,
+  .habilidades h3 {
+    font-size: 20px; }
+  .habilidades .habilidad h4 {
+    font-size: 18px; }
+  .habilidades .habilidad__container img {
+    width: 30px; }
+  .pasivas h3 {
+    font-size: 20px; }
+  .pasivas .pasiva__descripcion h4 {
+    font-size: 18px; }
   .constelaciones h3 {
     font-size: 20px; }
-  .pasiva__descripcion h4,
-  .habilidad__descripcion h4,
-  .constelacion__descripcion h4 {
+  .constelaciones .constelacion__descripcion h4 {
     font-size: 18px; } }
