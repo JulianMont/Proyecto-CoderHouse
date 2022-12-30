@@ -43,9 +43,7 @@
         .filtro__seccion-botonImg{
             width: 40px;
             height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexible(flex,row,nowrap,center,center); 
             margin: 4px;
             padding: 3px;
             cursor: pointer;
@@ -69,8 +67,7 @@
 
 
         &-search{
-            flex-direction: row;
-            justify-content: center;
+            @include flexible(flex,row,nowrap,center,stretch); 
             
             input{
                 color: #000000;

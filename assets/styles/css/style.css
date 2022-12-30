@@ -254,8 +254,8 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-content: center;
   align-items: center;
+  align-content: center;
   background: url(https://genshin.hoyoverse.com/_nuxt/img/5d86b58.jpg) no-repeat center/cover; }
   .redes__titulo {
     color: #ffffff;
@@ -274,8 +274,9 @@ header {
       margin: 0 40px;
       background-color: #868e9496;
       display: flex;
-      align-items: center;
+      flex-flow: row nowrap;
       justify-content: center;
+      align-items: center;
       transition: all 0.4s; }
       .redes__navBar li:hover {
         transform: scale(1.2); }
@@ -289,10 +290,10 @@ header {
 .contacto {
   width: 100%;
   background: url(https://genshin.hoyoverse.com/_nuxt/img/b57475e.jpg) no-repeat center/cover;
-  flex-flow: row wrap;
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
   padding: 50px; }
   .contacto__imgPaimon {
     width: 300px;
@@ -365,8 +366,9 @@ header {
       width: 40px;
       height: 40px;
       display: flex;
-      align-items: center;
+      flex-flow: row nowrap;
       justify-content: center;
+      align-items: center;
       margin: 4px;
       padding: 3px;
       cursor: pointer; }
@@ -380,8 +382,10 @@ header {
         width: 50%;
         height: 70%; }
     .filtro__seccion-search {
-      flex-direction: row;
-      justify-content: center; }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: stretch; }
       .filtro__seccion-search input {
         color: #000000;
         width: 300px;
