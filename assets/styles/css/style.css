@@ -67,13 +67,14 @@
   border-radius: 20px;
   border: 2px solid #000000;
   overflow: hidden;
-  margin: 0 auto;
   transition: all .4s; }
   .card:hover, .cards__card:hover, .materialesAscensionArma .tableContainer .materialesAscensionArma__table tbody tr td .cardTable:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 2px 0 #666666; }
 
 .cardTexto, .cards__card-text, .materialesAscensionArma .tableContainer .materialesAscensionArma__table tbody tr td .cardTable__texto {
+  font-size: 15px;
+  padding: 0 10px;
   text-align: center;
   font-weight: bold;
   text-overflow: ellipsis;
@@ -143,8 +144,8 @@ footer {
   text-align: center;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   footer p {
     color: #e0dddd;
     font-size: 14px; }
@@ -415,13 +416,17 @@ header {
   grid-template-columns: repeat(6, 1fr);
   gap: 15px 10px;
   padding: 10px 10px 30px 10px; }
-  .cards__card-iconElemento {
-    position: absolute;
-    top: 4%;
-    left: 4%;
-    width: 25px;
-    height: 25px;
-    z-index: 2; }
+  .cards__card {
+    min-height: 200px; }
+    .cards__card-text {
+      margin: 0; }
+    .cards__card-iconElemento {
+      position: absolute;
+      top: 4%;
+      left: 4%;
+      width: 25px;
+      height: 25px;
+      z-index: 2; }
 
 /* SECCION PERSONAJE MAS DETALLE */
 .presentacionPersonaje {

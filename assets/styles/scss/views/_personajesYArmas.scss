@@ -112,6 +112,7 @@
     &__card{
         
         @extend .card;
+        min-height: 200px;
 
         &-img{
             
@@ -121,6 +122,7 @@
         &-text{
             
             @extend .cardTexto;
+            margin: 0;
         }
         
         &-iconElemento{

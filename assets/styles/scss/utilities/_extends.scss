@@ -102,8 +102,6 @@
     border-radius: 20px;
     border: 2px solid #000000;
     overflow: hidden;
-    margin: 0 auto;
-
     transition: all .4s;
 
     &:hover{
@@ -114,6 +112,8 @@
 
 .cardTexto{
 
+    font-size: 15px;
+    padding: 0 10px;
     text-align: center;
     font-weight: bold;
     text-overflow: ellipsis;
