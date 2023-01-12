@@ -1,7 +1,7 @@
 
 footer{
     width: 100%;
-    background-color: #000000;
+    background-color: $negro;
     padding: 9px 0;
     text-align: center;
     @include flexible(flex,column,wrap,center,center); 

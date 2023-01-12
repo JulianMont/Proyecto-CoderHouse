@@ -253,6 +253,15 @@
             }
         }
     }
+
+    // ARMAS MAS DETALLE
+
+    .presentacionArma{
+        
+        &__img{
+            order: 1;
+        }
+    }
 }
 
 @media screen and (max-width:450px){
@@ -299,19 +308,23 @@
 
                 font-size: 40px;
             }
-        }
 
-        &__form{
-
-            .form__dato{
-                flex-direction: column;
-
-                label,
-                input,
-                select{
-                    width: 100%;
+            &-form{
+    
+                .form__dato{
+                    flex-direction: column;
+    
+                    label,
+                    input,
+                    select,
+                    option,
+                    textarea{
+                        font-size: 15px;
+                        width: 100%;
+                    }
                 }
             }
+
         }
     }
 
@@ -435,35 +448,7 @@
     ol,ul{
         padding: 0;
     }
-
-    .contacto{
-
-        &__formulario{
-            &-titulo{
-
-                font-size: 40px;
-            }
-
-            &-form{
     
-                .form__dato{
-                    flex-direction: column;
-    
-                    label,
-                    input,
-                    select,
-                    option,
-                    textarea{
-                        font-size: 15px;
-                        width: 100%;
-                    }
-                }
-            }
-
-        }
-
-    }
-
     /* FILTRO */
 
     .filtro{

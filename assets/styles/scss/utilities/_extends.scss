@@ -1,7 +1,7 @@
 
 .formDatoEstilo{
     
-    color: #ffffff;
+    color: $blanco;
     outline: none;
     border: none;
     background-color: #0000005e;
@@ -29,7 +29,7 @@
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $negro;
 }
 
 
@@ -79,7 +79,7 @@
 }
 
 .cabezeraTable{
-    background-color: #b0e1f5e3 ;
+    background-color: $TablaCabezera ;
     font-size: 20px;
 }
 
@@ -97,10 +97,10 @@
 
 .card{
 
-    background-color: #ffffff;
+    background-color: $blanco;
     position: relative;
     border-radius: 20px;
-    border: 2px solid #000000;
+    border: 2px solid $negro;
     overflow: hidden;
     transition: all .4s;
 
@@ -119,12 +119,12 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    color: #000000;
+    color: $negro;
 }
 
 .cardImg{
 
     width: 100%;
     height: 90%;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $negro;
 }

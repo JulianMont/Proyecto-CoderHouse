@@ -7,7 +7,7 @@ header{
     .navbar{
 
         width: 100%;
-        background: linear-gradient( #a5a5a5,#ffffff );
+        background: linear-gradient( #a5a5a5,$blanco );
 
         .container-fluid{
 
@@ -59,7 +59,7 @@ header{
 
                         font-size: 17px;
                         font-weight: bold;
-                        color: #000000;
+                        color: $negro;
                         padding: 0;
                         margin: 10px 0;
 

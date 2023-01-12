@@ -19,7 +19,7 @@
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 20px;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid #000000; }
 
 .containerDescripcionTexto, .pasivas .pasiva__descripcion, .habilidades .habilidad__descripcion, .constelaciones .constelacion__descripcion {
   width: 60%;
@@ -568,7 +568,7 @@ header {
 .materialesAscensionArma .tableContainer .materialesAscensionArma__table {
   width: 80%; }
   .materialesAscensionArma .tableContainer .materialesAscensionArma__table tbody tr td .cardTable {
-    margin-bottom: 20px;
+    margin: 20px auto;
     width: 80px;
     height: auto; }
     .materialesAscensionArma .tableContainer .materialesAscensionArma__table tbody tr td .cardTable__span {
@@ -652,7 +652,9 @@ header {
   .pasivas .pasiva__descripcion {
     width: 100%; }
   .constelaciones .constelacion__descripcion {
-    width: 100%; } }
+    width: 100%; }
+  .presentacionArma__img {
+    order: 1; } }
 
 @media screen and (max-width: 450px) {
   /* INICIO */
@@ -672,11 +674,14 @@ header {
     height: 200px; }
   .contacto__formulario-titulo {
     font-size: 40px; }
-  .contacto__form .form__dato {
+  .contacto__formulario-form .form__dato {
     flex-direction: column; }
-    .contacto__form .form__dato label,
-    .contacto__form .form__dato input,
-    .contacto__form .form__dato select {
+    .contacto__formulario-form .form__dato label,
+    .contacto__formulario-form .form__dato input,
+    .contacto__formulario-form .form__dato select,
+    .contacto__formulario-form .form__dato option,
+    .contacto__formulario-form .form__dato textarea {
+      font-size: 15px;
       width: 100%; }
   /* FILTRO */
   .filtro__seccion input {
@@ -724,17 +729,6 @@ header {
     height: 100vh; }
   ol, ul {
     padding: 0; }
-  .contacto__formulario-titulo {
-    font-size: 40px; }
-  .contacto__formulario-form .form__dato {
-    flex-direction: column; }
-    .contacto__formulario-form .form__dato label,
-    .contacto__formulario-form .form__dato input,
-    .contacto__formulario-form .form__dato select,
-    .contacto__formulario-form .form__dato option,
-    .contacto__formulario-form .form__dato textarea {
-      font-size: 15px;
-      width: 100%; }
   /* FILTRO */
   .filtro__seccion input {
     width: 60%; }
