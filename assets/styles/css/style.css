@@ -5,7 +5,7 @@
   background-color: #0000005e;
   padding: 5px; }
 
-.contenedorPDetalles, .presentacionPersonaje, .contenido, .pasivas, .habilidades, .constelaciones, .presentacionArma, .estadisticasArma, .materialesAscensionArma {
+.contenedorPDetalles, .filtro, .cards, .presentacionPersonaje, .contenido, .pasivas, .habilidades, .constelaciones, .presentacionArma, .estadisticasArma, .materialesAscensionArma {
   width: 85%;
   margin: 0 auto;
   padding: 20px; }
@@ -73,7 +73,7 @@
     box-shadow: 2px 2px 2px 0 #666666; }
 
 .cardTexto, .cards__card-text, .materialesAscensionArma .tableContainer .materialesAscensionArma__table tbody tr td .cardTable__texto {
-  font-size: 15px;
+  font-size: 12px;
   padding: 0 10px;
   text-align: center;
   font-weight: bold;
@@ -93,7 +93,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lexend Deca', sans-serif; }
 
 a {
   text-decoration: none; }
@@ -185,7 +185,7 @@ header {
           header .navbar .container-fluid .navbar-collapse .nav-item:hover::before {
             width: 100%; }
           header .navbar .container-fluid .navbar-collapse .nav-item .nav-link {
-            font-size: 17px;
+            font-size: 15px;
             font-weight: bold;
             color: #000000;
             padding: 0;
@@ -339,8 +339,6 @@ header {
 /* SECCION FILTRO */
 .filtro {
   width: 70%;
-  padding: 20px;
-  margin: 0 auto;
   display: flex;
   flex-flow: column nowrap; }
   .filtro h1 {
@@ -354,7 +352,7 @@ header {
     flex-flow: column wrap; }
     .filtro__seccion::placeholder {
       color: #000000; }
-    .filtro__seccion h6 {
+    .filtro__seccion span {
       font-weight: bold;
       font-size: 18px; }
     .filtro__seccion .filtro__container-button {
@@ -411,7 +409,6 @@ header {
 /* SECCION CARD */
 .cards {
   width: 70%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 15px 10px;
@@ -589,7 +586,7 @@ header {
 @media screen and (max-width: 960px) {
   /* HEADER */
   header .navbar .container-fluid .navbar-collapse .nav-item {
-    margin: 0 13px; }
+    margin: 0 12px; }
   /* INICIO */
   .inicio nav .inicio__navBar li {
     width: 150px; }
@@ -637,10 +634,13 @@ header {
       font-size: 50px;
       text-align: center; }
   /* FILTRO */
-  .filtro__seccion input {
-    width: 80%; }
+  .filtro {
+    width: 90%; }
+    .filtro__seccion input {
+      width: 80%; }
   /* PERSONAJES */
   .cards {
+    width: 90%;
     grid-template-columns: repeat(3, 1fr); }
   /* PERSONAJE MAS DETALLE */
   .presentacionPersonaje__info img {

@@ -3,9 +3,9 @@
 /* SECCION FILTRO */
 
 .filtro{
+
+    @extend .contenedorPDetalles;
     width: 70%;
-    padding: 20px;
-    margin: 0 auto;
     display:flex;
     flex-flow: column nowrap;
 
@@ -25,7 +25,7 @@
             color: #000000; 
         }
         
-        h6{
+        span{
             font-weight: bold;
             font-size: 18px;
         }
@@ -102,8 +102,8 @@
 
 .cards{
     
+    @extend .contenedorPDetalles;
     width: 70%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 15px 10px;
