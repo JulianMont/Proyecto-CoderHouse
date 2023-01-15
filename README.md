@@ -7,7 +7,6 @@ Esta pagina fue diseñada con la idea de facilitar informacion sobre el juego de
 
 ## Tecnologias Usadas
 
-Creación de pagina web para el curso de desarrollo web de Coderhouse
 - HTML (semántico)
 - CSS
     - Flex
